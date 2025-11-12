@@ -141,6 +141,32 @@ void Visitor::diplayInfo() {
     cout<<"Tickets Bought: "<<ticketsBought<<endl;
 }
 
+#include <iostream>
+
+#include "Bird.h"
+#include "Enclosure.h"
+#include "Mammal.h"
+#include "Reptile.h"
+#include "Visitor.h"
+
+int main() {
+    Enclosure enclosure(3);
+    Mammal mammal("Yellow","Lion",5,true);
+    Bird Bird(10,"Bird",2,false);
+    Reptile reptile(true,"Snake",3,true);
+    enclosure.addAnimal(&mammal);
+    enclosure.addAnimal(&Bird);
+    enclosure.addAnimal(&reptile);
+    Visitor visitor("Sarah Ali",3);
+
+    enclosure.displayAnimals();
+    cout<<"Visitor Info:"<<endl;
+    visitor.diplayInfo();
+    return 0;
+
+}
+
+
 
 
 
