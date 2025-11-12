@@ -1,16 +1,24 @@
-#ifndef REPTILE_H
-#define REPTILE_H
+//
+// Created by maham on 11/12/2025.
+//
 
+#ifndef TEST_REPTILE_H
+#define TEST_REPTILE_H
 #include "Animal.h"
 
-//define reptile class here
+
+class Reptile : public Animal{
+private:
+    bool isVenmous;
+public:
+    Reptile();
+    Reptile(bool isVenmous,string name, int age,bool isHungry);
+    ~Reptile();
+    void getVenmous();
+    void setVenmous();
+    
+
+};
 
 
-
-
-
-
-
-
-
-#endif
+#endif //TEST_REPTILE_H
