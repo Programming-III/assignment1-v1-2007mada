@@ -5,6 +5,20 @@
 #include "Animal.h"
 #include <string>
 #include <iostream>
+
+#include "Bird.h"
+#include "Enclosure.h"
+#include "Mammal.h"
+#include "Reptile.h"
+#include "Visitor.h"
+
+#include "Visitor.h"
+#include "Reptile.h"
+#include "Mammal.h"
+#include "Enclosure.h"
+
+#include "Bird.h"
+
 using namespace std;
 Animal::Animal() {
 
@@ -30,8 +44,6 @@ void Animal::feed() {
 // Created by maham on 11/12/2025.
 //
 
-#include "Bird.h"
-
 Bird::Bird() {
 
 }
@@ -51,7 +63,7 @@ Bird::~Bird() {
 // Created by maham on 11/12/2025.
 //
 
-#include "Enclosure.h"
+
 Enclosure::Enclosure() {
 }
 
@@ -84,7 +96,7 @@ void Enclosure::displayAnimals() {
 // Created by maham on 11/12/2025.
 //
 
-#include "Mammal.h"
+
 
 Mammal::Mammal() {
 
@@ -104,7 +116,7 @@ Mammal::~Mammal() {
 // Created by maham on 11/12/2025.
 //
 
-#include "Reptile.h"
+
 
 Reptile::Reptile() {
 
@@ -127,7 +139,6 @@ Reptile::~Reptile() {
 // Created by maham on 11/12/2025.
 //
 
-#include "Visitor.h"
 
 Visitor::Visitor() {
 
@@ -141,13 +152,7 @@ void Visitor::diplayInfo() {
     cout<<"Tickets Bought: "<<ticketsBought<<endl;
 }
 
-#include <iostream>
 
-#include "Bird.h"
-#include "Enclosure.h"
-#include "Mammal.h"
-#include "Reptile.h"
-#include "Visitor.h"
 
 int main() {
     Enclosure enclosure(3);
